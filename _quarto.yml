@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Gapminder Dataset Analysis"
+  page-navigation: true
+  back-to-top-navigation: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: life-gdp.qmd
+      - href: life-population.qmd
+      - href: country.qmd
+  page-footer: 
+    center: "© 2025 Yejin Choi" 
+    right: 
+      - icon: github
+        href: https://github.com/yejinannachoi/qtm350-quiz02
+
+format:
+  html:
+    theme: yeti
+    css: styles.css
+    toc: true
+
+
+

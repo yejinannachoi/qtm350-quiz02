@@ -1,0 +1,31 @@
+---
+title: "Life Expectancy and GDP per Capita"
+---
+
+Economic growth is often linked to improvements in healthcare, education, and overall well-being. This analysis explores the relationship between GDP per capita and life expectancy, providing insights into whether higher GDP per capita levels correspond to longer life expectancies across different countries.
+
+```{python}
+#| echo: false
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load dataset
+gapminder = pd.read_csv("gapminder.csv")
+```
+
+```{python}
+# Create scatter plot
+plt.figure(figsize=(8,6))
+sns.scatterplot(data=gapminder, x="gdp_per_capita", y="life_expectancy")
+
+plt.xscale("log") # Log scale
+plt.xlabel("GDP per Capita")
+plt.ylabel("Life Expectancy")
+plt.title("Life Expectancy vs GDP per Capita")
+
+plt.show()
+```
+
+

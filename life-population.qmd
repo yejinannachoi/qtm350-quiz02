@@ -1,0 +1,29 @@
+---
+title: "Life Expectancy and Population"
+---
+
+Population size can shape various aspects of a country’s development, including the availability of health care resources. This analysis investigates how population size correlates with life expectancy, providing insights into whether larger or smaller populations experience different health outcomes.
+
+```{python}
+#| echo: false
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load dataset
+gapminder = pd.read_csv("gapminder.csv")
+```
+
+```{python}
+# Create scatter plot
+plt.figure(figsize=(8,6))
+sns.scatterplot(data=gapminder, x="population_millions", y="life_expectancy")
+
+plt.xscale("log") # Log scale
+plt.xlabel("Population")
+plt.ylabel("Life Expectancy")
+plt.title("Life Expectancy vs Population")
+
+plt.show()
+```
