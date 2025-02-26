@@ -8,7 +8,7 @@ title: "Gapminder Dataset Analysis"
 
 This website provides analyses of the indicators in the dataset, exploring relationships between life expectancy, GDP per capita, and population to better understand global development patterns.
 
-**Links to Analyses**
+**Links to Analysis Pages**
 
 - [Life Expectancy and GDP per Capita](life-gdp.qmd)
 - [Life Expectancy and Population](life-population.qmd)
